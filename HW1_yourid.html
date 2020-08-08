@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+  
+  <style>
+  
+   *{
+        margin: 0;
+        padding: 0;
+        user-select: none;
+   }
+
+   body{
+       font-family: "kavivanar",cursive;
+       } 
+
+    .wrapper{
+        width: 100%;
+        max-width: 680px;
+        margin: 100px auto 0;
+    }
+
+    .form input[type="Submit"]{
+        background: lawngreen;
+    }
+    </style>
+  
+
+</head>
+<body>
+    
+    <form >
+            
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" name="fname" value="Your name.."><br><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname" value="Your last name.."><br><br>
+            <label for="Country">Country</label><br>
+            <select id="country" onchange="country()">
+                <option>Ghana</option>
+                <option>Nigeria</option>
+                <option>Togo</option>
+                <option>Cameroon</option>
+                <option>South Africa</option>
+                <option>Benin</option>
+            </select><br><br>
+            <textarea name="Subject" rows="10" cols="50">write something..</textarea><br><br>
+            <input type="Submit" value="Submit">
+                
+     </form> 
+
+</body>
+</html>

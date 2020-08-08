@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+   
+
+    <style>
+       
+
+   body{
+       font-family: "kavivanar",cursive;
+       background: rgba(238, 238, 238, 0.918);
+       } 
+
+    .wrapper{
+        width: 100%;
+        max-width: 680px;
+        margin: 100px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+    } 
+
+    .form{
+        width: 100%;
+        margin: 25px 0;
+    }
+
+   .top-form,
+   .middle-form,
+   .bottom-form{
+       width: 100%;
+       min-height: 65px;
+       margin: 10px 0;
+   }
+
+   .form input[type="text"],
+   .form select[id="country"],
+   .form textarea{
+      padding: 15px 5px;
+      box-sizing: border-box; 
+      width: 90%;
+      border: 2px solid lightgrey;
+      border-radius: 2px;
+      outline: none;
+      transition: al 0.2 ease;
+   }
+
+   .form input:focus,
+   .form textarea:focus{
+       border-color: gray;
+       box-shadow: insert 0 1px 1px rgba
+   }
+
+.bottom-form textarea{
+    height: 150px;
+}
+
+.btn{
+    background: green;
+    width: 80px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+} 
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+    </div>
+    <div class="form">
+        <div class="top-form">
+            <div class="inner-form">
+                <div class="label">First name..</div>
+                <input type="text" placeholder="Your name">
+            </div>
+            <div class="inner-form">
+                <div class="label">Last name..</div>
+                <input type="text" placeholder="Your last name">
+            </div>
+        </div>
+        <div class="middle-form">
+            <div class="inner-form">
+                <div class="label">Country</div>
+                <select id="country" >
+                    <option>Ghana</option>
+                    <option>Nigeria</option>
+                    <option>Togo</option>
+                    <option>Cameroon</option>
+                    <option>South Africa</option>
+                    <option>Benin</option>
+                </select>
+        </div>
+
+        <div class="bottom-form">
+            <div class="inner-form">
+                <div class="label">Subject</div>
+                <textarea placeholder="write a message.."></textarea>
+        </div>
+                <div class="btn">Submit</div>
+    </div>
+    
+</body>
+</html>
